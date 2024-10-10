@@ -3,24 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>welcome to my website | Affective TJNU Research Lab</title>
+  <title>attention-based temporal graph representation learning for eeg-based emotion recognition | Affective TJNU Research Lab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
-  <meta name="description" content="Over the years, our research team has been dedicated to exploring the relationship between emotional intelligence and health medicine. With support from the Tianjin Key Laboratory of Student Mental He">
+  <meta name="description" content="Abstract：    Due to the objectivity of emotional expression in the central nervous system, EEG-based emotion recognition can effectively reflect humans’ internal emotional states. In recent ye">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Welcome to my website">
-<meta property="og:url" content="https://cyh188.github.io/2024/09/28/hello-world/index.html">
+<meta property="og:title" content="Attention-based Temporal Graph Representation Learning for EEG-based Emotion Recognition">
+<meta property="og:url" content="https://cyh188.github.io/2024/10/10/ATGRNet/index.html">
 <meta property="og:site_name" content="Affective TJNU Research Lab">
-<meta property="og:description" content="Over the years, our research team has been dedicated to exploring the relationship between emotional intelligence and health medicine. With support from the Tianjin Key Laboratory of Student Mental He">
+<meta property="og:description" content="Abstract：    Due to the objectivity of emotional expression in the central nervous system, EEG-based emotion recognition can effectively reflect humans’ internal emotional states. In recent ye">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-09-28T10:52:21.080Z">
-<meta property="article:modified_time" content="2024-09-29T10:53:33.754Z">
+<meta property="og:image" content="https://cyh188.github.io/images/ATGRNet.png">
+<meta property="article:published_time" content="2024-10-10T08:25:48.996Z">
+<meta property="article:modified_time" content="2024-10-10T08:57:03.560Z">
 <meta property="article:author" content="Affective TJNU Research Lab">
 <meta property="article:tag" content="emotion recognition, EEG, deep learning, intelligent health, affective computing">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cyh188.github.io/images/ATGRNet.png">
   
     <link rel="alternate" href="/atom.xml" title="Affective TJNU Research Lab" type="application/atom+xml">
   
@@ -164,7 +166,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-hello-world" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-ATGRNet" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
@@ -172,7 +174,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      Welcome to my website
+      Attention-based Temporal Graph Representation Learning for EEG-based Emotion Recognition
     </h1>
   
 
@@ -180,8 +182,8 @@
     
     <div class="article-meta">
       
-	<a href="/2024/09/28/hello-world/" class="article-date">
-	  <time datetime="2024-09-28T10:52:21.080Z" itemprop="datePublished">2024-09-28</time>
+	<a href="/2024/10/10/ATGRNet/" class="article-date">
+	  <time datetime="2024-10-10T08:25:48.996Z" itemprop="datePublished">2024-10-10</time>
 	</a>
 
       
@@ -197,7 +199,198 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Over the years, our research team has been dedicated to exploring the relationship between emotional intelligence and health medicine. With support from the Tianjin Key Laboratory of Student Mental Health and Intelligent Evaluation, jointly established by the School of Computer and Information Engineering and the Faculty of Psychology at our university, as well as the “Cognitive and Affective Computing Interdisciplinary Fusion Research Team” at the university level, we have accumulated numerous technical achievements in interdisciplinary research on intelligent medicine. The principal investigator has led projects funded by the National Natural Science Foundation of China (Youth Program), sub-projects of the National Key R&amp;D Program, and the Joint Fund of Equipment Pre-research and Ministry of Education. Our team members have also led five National Natural Science Foundation of China projects, including general and youth programs, and participated in over 10 provincial and ministerial projects, such as key projects of the Tianjin Applied Basic Research Program, Tianjin Support Program projects, and international cooperation projects. Consequently, we possess an in-depth understanding of core technical details and development implementation in relevant fields. We have accumulated solid technical expertise in brain imaging data collection, MRI and EEG signal processing and analysis, emotion detection, automated depression severity analysis, deep learning techniques, software design, and development. These technological foundations undoubtedly provide essential technical support for the smooth progress of this project.</p>
+        <div class="custom-container">
+
+
+  
+
+<h2 id="Abstract"> Abstract： </h2>
+
+ <p>Due to the objectivity of emotional expression in
+the central nervous system, EEG-based emotion recognition can
+effectively reflect humans’ internal emotional states. In recent
+years, convolutional neural networks (CNNs) and recurrent neural
+networks (RNNs) have made significant strides in extracting local
+features and temporal dependencies from EEG signals. However,
+CNNs ignore spatial distribution information from EEG electrodes;
+moreover, RNNs may encounter issues such as exploding/vanishing
+gradients and high time consumption. To address these limitations,
+we propose an attention-based temporal graph representation
+network (ATGRNet) for EEG-based emotion recognition. Firstly,
+a hierarchical attention mechanism is introduced to integrate
+feature representations from both frequency bands and channels
+ordered by priority in EEG signals. Second, a graph convolutional
+neural network with top-k operation is utilized to capture internal
+relationships between EEG electrodes under different emotion
+patterns. Next, a residual-based graph readout mechanism is
+applied to accumulate the EEG feature node-level representations
+into graph-level representations. Finally, the obtained graph-level
+representations are fed into a temporal convolutional network
+(TCN) to extract the temporal dependencies between EEG frames.
+We evaluated our proposed ATGRNet on the SEED, DEAP
+and FACED datasets. The experimental findings show that the
+proposed ATGRNet surpasses the state-of-the-art graph-based
+mehtods for EEG-based emotion recognition.</p>
+
+<h2 id="Flowchart"> Flowchart </h2>
+ <p>
+     <a href="/images/ATGRNet.png" title="" class="fancybox" rel="article0">
+       <img src="/images/ATGRNet.png" alt="Image Description" style="width:100%; max-width:600px; border-radius:10px; box-shadow:0px 4px 12px rgba(0, 0, 0, 0.1);"/>
+     </a>
+   </p>
+
+  
+
+  <h2 id="MainText">Main Text </h2>
+
+  <!-- PDF 显示区域 -->
+  <div class="pdf-container">
+    <iframe src="/files/ATGRNet.pdf"></iframe>
+  </div>
+
+  <!-- 下载按钮 -->
+  <div class="button-container">
+    <a href="/files/ATGRNet.pdf" download class="download-button">
+      Download PDF
+    </a>
+  </div>
+
+<div class="article-entry" itemprop="articleBody">
+
+   <p>
+     <a target="_blank" href="https://itimetraveler.github.io/hexo-theme-hiker/gallery/shoes.jpg" title="" class="fancybox" rel="article0 noopener"></a>
+   </p>
+
+  
+ </div>
+
+<style>
+  /* 自定义容器样式 */
+  .custom-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    margin: 30px auto;
+    padding: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* 标题样式（局部作用域） */
+  .custom-container .post-title {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  /* 描述文本样式（局部作用域） */
+  .custom-container .post-description {
+    background-color: #e9ecef;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* PDF 容器样式（局部作用域） */
+  .custom-container .pdf-container {
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* 设置 PDF 宽度样式 */
+  .custom-container .pdf-container iframe {
+    width: 100%; /* PDF 显示宽度 */
+    max-width: 1200px; /* 设置最大宽度 */
+    height: 900px; /* PDF 显示高度 */
+    border: none; /* 隐藏边框 */
+    border-radius: 10px;
+    margin: 0 auto; /* 居中显示 */
+    box-shadow: 0px 0px 0px; /* 确保没有阴影 */
+  }
+
+  /* 下载按钮样式（局部作用域） */
+  .custom-container .button-container {
+    text-align: center;
+  }
+
+  .custom-container .download-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.5);
+  }
+
+  .custom-container .download-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 123, 255, 0.7);
+  }
+
+  /* 内容侧边栏样式（局部作用域） */
+  .custom-container .content-sidebar {
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    width: 200px;
+  }
+
+  /* 自定义侧边栏项（局部作用域） */
+  .custom-container .content-sidebar h3 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .custom-container .content-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .custom-container .content-sidebar ul li {
+    margin: 10px 0;
+  }
+
+  .custom-container .content-sidebar ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+  }
+
+  .custom-container .content-sidebar ul li a:hover {
+    color: #0056b3;
+  }
+
+  h2#Abstract {
+    margin-bottom: 20px; /* 根据需要调整值 */
+  }
+ .pdf-container {
+    margin-top: 20px; /* 如果还需更大间距，可增加值 */
+  }
+ 
+ 
+ #toolbarContainer {
+  display: none !important;
+}
+
+</style>
+
+
+
 
       
     </div>
@@ -211,7 +404,7 @@
           </li>
           <li class="post-copyright-link">
           <strong>Post link:  </strong>
-          <a href="/2024/09/28/hello-world/" target="_blank" title="Welcome to my website">https://cyh188.github.io/2024/09/28/hello-world/</a>
+          <a href="/2024/10/10/ATGRNet/" target="_blank" title="Attention-based Temporal Graph Representation Learning for EEG-based Emotion Recognition">https://cyh188.github.io/2024/10/10/ATGRNet/</a>
           </li>
           <li class="post-copyright-license">
             <strong>Copyright Notice:   </strong>
@@ -259,15 +452,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2024/09/30/CADD-DCCNN/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Multi-view domain-adaptive representation learning for EEG-based emotion recognition
-        
-      </div>
-    </a>
   
+    <a href="/2024/09/30/CADD-DCCNN/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Multi-view domain-adaptive representation learning for EEG-based emotion recognition</div>
+    </a>
   
 </nav>
 
@@ -280,7 +469,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav">None</ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Abstract"><span class="nav-number">1.</span> <span class="nav-text"> Abstract： </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Flowchart"><span class="nav-number">2.</span> <span class="nav-text"> Flowchart </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MainText"><span class="nav-number">3.</span> <span class="nav-text">Main Text </span></a></li></ol>
     
     </div>
   </aside>
